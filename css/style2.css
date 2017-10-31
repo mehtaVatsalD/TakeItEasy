@@ -1,0 +1,951 @@
+@media(max-width: 766px)
+{
+
+html,body{
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100vh;
+}
+
+.container{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.row{
+	width: 100%;
+	display: flex;
+	margin: 0 auto;
+}
+
+.col-1{
+	width: 8.333%;
+}
+
+.col-2{
+	width: 16.667%;
+}
+
+.col-3{
+	width: 25%;
+}
+
+.col-4{
+	width: 33.333%;
+}
+
+.col-5{
+	width: 41.667%;
+}
+
+.col-sl-6{
+	width: 50%;
+}
+
+.col-7{
+	width: 58.333%;
+}
+
+.col-8{
+	width: 66.667%;
+}
+
+.col-9{
+	width: 75%;
+}
+
+.col-10{
+	width: 83.333%;
+}
+
+.col-11{
+	width: 91.667%;
+}
+
+.col-12{
+	width: 100%;
+}
+
+.logo{
+	font-size: 17px;
+	color: #333;
+	display: inline-block;
+	position: relative;
+	top: -5px;
+	cursor: pointer;
+}
+
+.logoImg{
+	width: 25px;
+	height: 25px;
+	margin-left: 10px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.header{
+	border-bottom: 1px solid #333;
+	height: 70px;
+}
+
+.login{
+	width: 100%;
+	max-height: 700px;
+	margin: 0 auto;
+	margin-top: 50px;
+	//border: 1px solid #555;
+	box-shadow: 0px 0px 5px #666;
+	padding-top: 12px;
+	padding-bottom: 50px;
+}
+
+.login:hover{
+	box-shadow: 0px 0px 10px #666;
+}
+
+.login table{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.login td{
+	position: relative;
+}
+
+.signup{
+	width: 98%;
+	max-height: 900px;
+	margin: 0 auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	//border: 1px solid #555;
+	box-shadow: 0px 0px 5px #666;
+	padding-top: 12px;
+	padding-bottom: 20px;
+}
+
+.signup:hover{
+	box-shadow: 0px 0px 10px #666;
+}
+
+.signup table{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.signup td{
+	position: relative;
+}
+
+.fontIcons{
+	color: #333;
+	font-size: 20px;
+	padding-top: 20px;
+}
+
+.inputs{
+	width: 220px;
+	border: 0;
+	height: 30px;
+	padding-left: 10px;
+	font-size: 16px;
+	border-bottom: 1px solid #607d8b;
+	outline: 0;
+	color: #333;
+	margin-top: 20px;
+	margin-left: 0px;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.buttons,.buttons2{
+	height: 30px;
+	width: 130px;
+	background-color: #fff;
+	border: 1px solid #555;
+	color: #333;
+	display: inline;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-top: 20px;
+	border-radius: 5px;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 15px;
+	outline: 0;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.buttons2{
+	width: 80px;
+}
+
+.buttons:hover,.buttons:focus{
+	box-shadow: 0px 0px 2px #555;
+	cursor: pointer;
+}
+
+span.error{
+	position: absolute;
+	top: -12%;
+	left: 15%;
+	background-color: rgba(244,67,54,1);
+	color: white;
+	font-size: 14px;
+	width: 200px;
+	display: block;
+	border-radius: 3px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+span.error::after{
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 46%;
+	border-width: 5px;
+	border-style: solid;
+	border-color: rgba(244,67,54,1) transparent transparent transparent;
+}
+
+.notice{
+	display: block;
+	text-align: center;
+	color: red;
+}
+
+.dropDownBack{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	display: none;
+}
+
+.dropDown{
+	display: none;
+	width: 40%;
+	position: absolute;
+	top: 55px;
+	right: 5%;
+	z-index: 2;
+	background-color: rgba(0,0,0,0.7);
+	font-size: 14px;
+}
+
+.dropDown::before{
+	content: "";
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent rgba(0,0,0,0.7) transparent;
+	position: absolute;
+	top: -11%;
+	left: 50%;
+}
+
+.dropDown ul{
+	padding: 5px;
+	margin: 0;
+}
+
+.dropDown li{
+	text-align: center;
+	padding: 2px;
+	color: white;
+	list-style-type: none;
+	cursor: pointer;
+}
+
+.dropDown li input{
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	color: white;
+	font-size: 14px;
+	font-family: "Ubuntu", sans-serif;
+	cursor: pointer;
+	width: 100%;
+}
+
+.loggedUser{
+	display: inline-block;
+	position: relative;
+	top: 15px;
+	left: 40px;
+	color: #333;
+	cursor: pointer;
+}
+
+.headerPic{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	cursor: pointer;
+}
+
+.blogEditor{
+	margin-top: 10px;
+}
+
+.blogEditor input[type="text"]{
+	width: 100%;
+	height: 45px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #333;
+	border:0;
+	outline: 0;
+	box-shadow: 0px 0px 2px #607d8b;
+	font-size: 20px;
+	padding: 10px; 
+	font-family: "Ubuntu", sans-serif;
+
+}
+
+.blogEditor textarea{
+	width: 100%;
+	min-height: 50px;
+	padding: 10px;
+	font-family: "Ubuntu", sans-serif;
+	outline: none;
+	font-size: 15px;
+	color: #333;
+	overflow: hidden;
+	resize: none;
+	border:0;
+	box-shadow: 0px 0px 2px #607d8b;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.blogEditor textarea:hover,.blogEditor textarea:focus{
+	box-shadow: 0px 0px 5px #607d8b;
+}
+
+.uploadDiv{
+	width: 220px;
+	height: 25px;
+	border: 1px solid #555;
+	border-radius: 5px;
+	overflow: hidden;
+	cursor: pointer;
+	color: #333;
+	padding-top: 3px;
+	margin-left: 10px;
+	margin-top: 25px;
+}
+
+.uploadDiv:hover{
+	box-shadow: 0px 0px 2px #555;
+}
+
+#showProPic{
+	width: 100px;
+	height: 100px;
+}
+
+.uploadButton{
+	height: 100px;
+	position: relative;
+	top: -48px;
+	cursor: pointer;
+	left: 0px;
+}
+
+.searchBox{
+	width: 96%;
+	display: block;
+	/*margin:  0 auto;*/
+	height: 30px;
+	outline: 0;
+	border: 0;
+	box-shadow: 0px 0px 2px #607d8b;
+	margin-top: 20px;
+	padding-left: 10px;
+	font-family: "Ubuntu", sans-serif;
+	font-size: 15px;
+	color: #333;
+}
+
+.searchBox:hover,.searchBox:focus{
+	box-shadow: 0px 0px 5px #607d8b; 
+}
+
+div.searchResult{
+	width: 96%;
+	box-shadow: 0px 0px 2px #607d8b;
+	background-color: #fff;
+	position: absolute;
+	z-index: 2;
+}
+
+.searchResult ul{
+	list-style-type: none;
+	padding-left: 10px;
+}
+
+.searchResult span{
+	position: relative;
+	top: -10px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.searchResult li{
+	margin-bottom: 10px;
+}
+
+.searchResult img{
+	width: 30px;
+	height: 30px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.searchResult a,.searchResult a:visited{
+	color: #333;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+}
+
+.userInfo{
+	color: #333;
+}
+
+.userInfo img{
+	display: block;
+	margin: 0 auto;
+	width: 150px;
+	height: 150px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 5px #555;
+	padding: 10px;
+}
+
+.profileTitle{
+	font-size: 30px;
+	color: #000;
+}
+
+.userMail{
+	font-size: 14px;
+	color: #777;
+}
+
+.postCountTitle{
+	text-align: center;
+	font-size: 20px;
+}
+
+.postCountTitle td{
+	padding:0px 20px 0px 20px;
+}
+
+.postCounts{
+	text-align: center;
+	font-size: 30px;
+}
+
+.followButton{
+	font-size: 20px;
+	border: 1px solid #555;
+	width: 100px;
+	text-align: center;
+}
+
+.deleteBtn,.editBtn{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: block;
+	font-size: 30px;
+	color: #555;
+	cursor: pointer;
+}
+
+.blogPosts a{
+	text-decoration: none;
+}
+
+.blogPosts{
+	position: relative;
+	width: 100%;
+	box-shadow: 0px 0px 2px #607d8b;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding:10px;
+}
+
+.blogPosts:hover{
+	box-shadow: 0px 0px 5px #607d8b;
+}
+
+.blogPosts img{
+	width: 30px;
+	height: 30px;
+	margin: 15px;
+	display: inline-block;
+}
+
+.blogPosts .blogWriter{
+	color: #333;
+	position: relative;
+	top: -25px;
+}
+
+.blogPosts .blogTitles{
+	font-size: 30px;
+	padding-left: 10px;
+}
+
+.blogPosts .mainContent{
+	margin: 10px;
+	line-height: 25px;
+}
+
+pre{
+	font-family: 'Ubuntu', sans-serif;
+	color: #555;
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.blogFeedback{
+	display: inline-block;
+	margin: 20px;
+	color: #607d8b;
+	cursor: pointer;
+}
+
+.blogFeedback .usefull{
+	color: #009688;
+}
+
+.blogFeedback .wastefull{
+	color: #f44336;
+}
+
+.commentPlz input[type='text']{
+	display: inline-block;
+	height: 30px;
+	position: relative;
+	top: -25px;
+	width: 400px;
+	border: 0;
+	outline: 0;
+	box-shadow: 0 0 2px #607d8b;
+	padding-left: 15px;
+	color: #555;
+}
+
+.commentBtn{
+	position: relative;
+	top: -25px;
+}
+
+.showCommentTable img{
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+}
+
+.showCommentTable td{
+	font-size: 12px;
+	line-height: 18px;
+	color: #555;
+}
+
+.showCommentTable td span{
+	color: #333;
+}
+
+.viewAllComments{
+	text-decoration: none;
+	color: #607d8b;
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+.notifySymbol{
+	display: inline-block;
+	font-size: 20px;
+	margin-left: 20px;
+	position: relative;
+	top: -15px;
+	cursor: pointer;
+}
+
+.notifications{
+	background-color: rgba(255,255,255,0.9);
+	box-shadow: 0px 0px 3px #607d8b;
+	width: 500px;
+	min-height: 80px;
+	max-height: 500px;
+	overflow-y: auto;
+	position: absolute;
+	top: 70px;
+	right: 20px;
+	display: none;
+	z-index: 2;
+}
+
+.notifications span{
+	display: inline-block;
+	position: relative;
+	top: 30px;
+	left: 170px;
+	color: #555;
+}
+
+.notifications table{
+	width: 96%;
+	margin: 10px;
+	color: #555;
+	cursor: pointer;
+}
+
+.notifications table.unread{
+	background-color: #ddd;
+}
+
+.notifications img{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+}
+
+.notifications a{
+	text-decoration: none;
+	color: #607d8b;
+	position: relative;
+	top: 10px;
+	left: 10px;
+}
+
+.deleteConf{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	display: none;
+	z-index: 1;
+}
+
+.deleteCont{
+	position: fixed;
+	top: 40vh;
+	left: 25%;
+	width: 50%;
+	height: 100px;
+	background-color: #fff;
+	display: none;
+	z-index: 2;
+}
+
+.blackback{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.9);
+	display: none;
+	z-index: 1;
+}
+
+.editProfile{
+	position: fixed;
+	top: 4vh;
+	left: 25%;
+	width: 50%;
+	max-height: 88vh;
+	z-index: 2;
+	padding: 20px;
+	overflow-y: auto;
+	border: 1px solid white;
+	display: none;
+}
+
+.deleteCont span{
+	color: #333;
+	display: block;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.deleteCont div{
+	text-align: center;
+}
+
+.viewMore{
+	width: 100%;
+	height: 40px;
+	background-color: #fff;
+	color: #555;
+	text-align: center;
+	box-shadow: 0 0 5px #607d8b;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-top: 12px;
+	cursor: pointer;
+}
+
+.verifyTable{
+	box-shadow: 0 0 5px #607d8b;
+	padding: 20px;
+	margin-top: 40px;
+	width: 40%;
+}
+
+.verifyTable td{
+	text-align: center;
+	position: relative;
+}
+
+.verifyTable input{
+	text-align: center;
+}
+
+.recommendParent{
+	margin-top: 20px;
+	height: 200px;
+	overflow: hidden;
+	box-shadow: 0px 0px 5px #607d8b;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.recommendChild{
+	width: 100%;
+	height: 214px;
+	overflow-x: scroll;
+	display: flex;
+}
+
+.recommendCards{
+	width: 180px;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 100%;
+}
+
+.recommendCards img{
+	width: 140px;
+	height: 140px;
+	display: block;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.recommendCards p{
+	text-align: center;
+}
+
+.recommendCards a{
+	text-decoration: none;
+	color: #555;
+}
+
+.shortagePara{
+	display: block;
+	width: 140px;
+	height: 90%;
+	padding-top: 40px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.contactTable{
+	width: 90%;
+	margin-top: 50px;
+	box-shadow: 0px 0px 5px #607d8b;
+	padding: 20px;
+}
+
+.contactTable .inputs{
+	width: 98%;
+}
+
+.contactMessage{
+	width: 100%;
+	min-height: 50px;
+	padding: 10px;
+	font-family: "Ubuntu", sans-serif;
+	outline: none;
+	font-size: 17px;
+	color: #333;
+	overflow: hidden;
+	resize: none;
+	border:0;
+	box-shadow: 0px 0px 2px #607d8b;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.selectBox{
+	width: 100%;
+	height: 30px;
+	background-color: transparent;
+	padding-left: 10px;
+	border-radius: 5px;
+	outline: none;
+}
+
+.paperGenerater{
+	width: 100%;
+	max-height: 100000px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	//border: 1px solid #555;
+	box-shadow: 0px 0px 5px #666;
+	padding-top: 12px;
+	padding-bottom: 20px;
+	overflow-x: auto;
+}
+
+.paperGenerater:hover{
+	box-shadow: 0px 0px 10px #666;
+}
+
+.paperGenerater table{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	color: red;
+}
+
+.paperGenerater td{
+	position: relative;
+}
+
+span.k-widget{
+	width: 100%;
+}
+
+div.k-animation-container{
+	width: 200px;
+}
+
+
+.formInput{
+	width: 100%;
+	height: 30px;
+	border-radius: 5px;
+	padding-left: 10px;
+	border: 1px solid #666;
+	outline: 0;
+}
+
+.formInput{
+	width: 100%;
+	height: 30px;
+	border-radius: 2px;
+	padding-left: 10px;
+	border: 1px solid #aaa;
+	outline: 0;
+}
+
+.paperStyleTable{
+	width: 200px;
+}
+
+.paperStyleTable tr{
+	text-align: center;
+	font-size: 10px;
+	color: #555;
+}
+
+.addQueBtn{
+	border: 1px solid #777;
+	color: #555;
+	width: 100%;
+	padding: 10px;
+	cursor: pointer;
+	text-align: center;
+}
+
+.addQueBtn:hover{
+	box-shadow: 0px 0px 5px #607d8b;
+}
+
+.rmvQueBtn{
+	display: block;
+	font-size: 30px;
+	color: #555;
+	cursor: pointer;
+}
+
+.paperInputs{
+	width: 50px;
+	height: 20px;
+	padding: 10px;
+	font-size: 10px;
+	margin: 10px;
+}
+
+#errorStatus{
+	color: red;
+}
+
+.labels{
+	display: block;
+	font-weight: 900;
+	color: #555;
+	text-align: left;
+}
+
+.historyDiv{
+	/*margin-top: 50px;*/
+	margin-bottom: 50px;
+	box-shadow: 0px 0px 5px #607d8b;
+	padding: 20px;
+	overflow-y: auto;
+	color: #555;
+}
+
+.historyDiv{
+	text-align: center;
+}
+
+.historyDiv a{
+	color: blue;
+	text-decoration: none;
+}
+}
+
+table.editQueTable{
+	color: #555;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.deleteBtnQue,.editBtnQue,.approvBtnQue{
+	display: block;
+	font-size: 30px;
+	color: #555;
+	cursor: pointer;
+}
+
+.editTextArea{
+	width: 100%;
+	height: 100%;
+}
+
+.propicDisplay{
+	width: 50px;
+	height: 50px;
+}
